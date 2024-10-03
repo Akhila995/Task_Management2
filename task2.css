@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dark-mode {
+    background-color: #343a40;
+    color: white;
+}
+
+.progress {
+    height: 30px;
+}
+
+.completed {
+    text-decoration: line-through;
+}

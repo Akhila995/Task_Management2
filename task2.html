@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div class="container mt-5" id="app">
+        <h1 class="text-center">Task Management App</h1>
+        <div class="form-group">
+            <input type="text" id="userName" class="form-control" placeholder="Enter your name" />
+        </div>
+        <h3 id="welcomeMessage" class="text-center mt-2"></h3>
+
+        <div class="input-group mt-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Enter a new task" />
+            <select id="taskStatus" class="form-control">
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="addTaskBtn">Add Task</button>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h3>Pending Tasks <span id="pendingTaskCount" class="badge badge-info"></span></h3>
+            <ul id="pendingTaskList" class="list-group"></ul>
+        </div>
+
+        <div class="mt-4">
+            <h3>Completed Tasks <span id="completedTaskCount" class="badge badge-success"></span></h3>
+            <ul id="completedTaskList" class="list-group"></ul>
+        </div>
+
+        <div class="mt-4">
+            <h3>Progress</h3>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar" style="width: 0%;">0%</div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button class="btn btn-dark" id="toggleThemeBtn">Toggle Dark/Light Mode</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="task2.js"></script>
+</body>
+</html>
